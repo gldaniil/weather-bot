@@ -1,0 +1,28 @@
+{
+  "name": "weather-bot",
+  "version": "1.0.0",
+  "description": "Телеграм-бот, информирующий о погоде",
+  "main": "index.js",
+  "scripts": {
+    "test": "start app.js",
+    "serve": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gldaniil/weather-bot.git"
+  },
+  "keywords": [
+    "Яндекс.Погода",
+    "TelegramBot",
+    "Nodejs"
+  ],
+  "author": "gldaniil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gldaniil/weather-bot/issues"
+  },
+  "homepage": "https://github.com/gldaniil/weather-bot#readme",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}
