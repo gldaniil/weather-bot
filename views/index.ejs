@@ -1,0 +1,67 @@
+<%- include('./includes/head') %>
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__item header__logo">Logo</div>
+          <div class="header__item header__yandex">Yandex</div>
+          <div class="header__item header__other">
+            <a href="" class="header__link">Другие проекты</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section id="params" class="params">
+      <div class="params__wrapper">
+        <div class="container">
+          <div class="params__inner">
+            <div class="params__window">
+              <h1 class="params__title-h1">Параметры бота</h1>
+              <!-- Ваш телеграм токен -->
+              <div class="params__telegram">
+                <div class="params__title">
+                  <h2 class="params__title-h2">Ваш Телеграм-токен</h2>
+                  <span class="params__tg-token-edit">изменить</span>
+                </div>
+                <div class="params__value">
+                  <input class="params__tg-token" value="<%= tg_token %>" disabled>
+                </div>
+                <div class="params__title">
+                  <h2 class="params__title-h2">Идентификатор Телеграм-чата</h2>
+                  <span class="params__tg-id-edit">изменить</span>
+                </div>
+                <div class="params__value">
+                  <input class="params__tg-id" value="<%= tg_id %>" disabled>
+                </div>
+              </div>
+              <div class="params__yandex">
+                <div class="params__title">
+                  <h2 class="params__title-h2">Yandex-api</h2>
+                  <span class="params__ya-token-edit">изменить</span>
+                </div>
+                <div class="params__value">
+                  <input class="params__ya-token" value="<%= ya_token %>" disabled>
+                </div>
+              </div>
+              <div class="params__city">
+                <div class="params__title">
+                  <h2 class="params__title-h2">Город</h2>
+                  <span class="params__city-edit">изменить</span>
+                </div>
+                <div class="params__value">
+                  <input class="params__city-name" value="<%= city_name %>" disabled>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <%- include('./includes/footer') %>
+</body>
+
+</html>

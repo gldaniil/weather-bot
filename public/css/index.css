@@ -5,8 +5,66 @@
 }
 
 body {
-  background-color: #1900ff;
   font-family: "PT Mono", monospace;
+}
+
+input {
+  padding: 0 5px;
+  outline: none;
+  height: 30px;
+}
+
+.params__decline, .params__accept, .params__city-edit, .params__ya-token-edit, .params__tg-id-edit, .params__tg-token-edit {
+  cursor: pointer;
+}
+
+.params__city-edit, .params__ya-token-edit, .params__tg-id-edit, .params__tg-token-edit {
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.params__city-edit::after, .params__ya-token-edit::after, .params__tg-id-edit::after, .params__tg-token-edit::after {
+  content: "?";
+}
+.params__city-edit:hover, .params__ya-token-edit:hover, .params__tg-id-edit:hover, .params__tg-token-edit:hover {
+  color: #1900ff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.params__decline, .params__accept {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  margin-left: 10px;
+  padding: 5px 20px;
+  color: #000000;
+  border-radius: 17.5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.params__decline:hover, .params__accept:hover {
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.params__city-name, .params__ya-token, .params__tg-id, .params__tg-token {
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.params__city-name.edit, .params__ya-token.edit, .params__tg-id.edit, .params__tg-token.edit {
+  border: 2px solid rgb(255, 0, 0);
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .header__wrapper {
@@ -48,6 +106,69 @@ body {
 
 .header__link {
   text-decoration: none;
+}
+
+.params__window {
+  margin: 40px auto;
+  border-radius: 17.5px;
+  padding: 40px;
+  -webkit-box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.25);
+  width: 980px;
+  background-color: #ffffff;
+}
+
+.params__title-h1 {
+  font-size: 28px;
+  letter-spacing: 2.5px;
+  text-align: center;
+}
+
+.params__telegram {
+  position: relative;
+}
+
+.params__title-h2 {
+  margin-right: 10px;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.params__title {
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+}
+
+.params__tg-token {
+  font-size: 14px;
+  line-height: 24px;
+  width: 300px;
+}
+.params__tg-id {
+  font-size: 14px;
+  line-height: 24px;
+  width: 300px;
+}
+.params__ya-token {
+  font-size: 14px;
+  line-height: 24px;
+  width: 300px;
+}
+.params__city-name {
+  font-size: 14px;
+  line-height: 24px;
+  width: 300px;
+}
+.params__accept {
+  background-color: #ffffff;
+}
+
+.params__decline {
+  background-color: #ffffff;
 }
 
 /*# sourceMappingURL=index.css.map */
